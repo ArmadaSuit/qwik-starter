@@ -12,7 +12,7 @@ export const App = component$(() => {
       <p>Congratulations Qwik is working!</p>
 
       <p>Next steps:</p>
-      <ol>
+      <ol class="list-inside list-decimal">
         <li>
           Open dev-tools network tab and notice that no JavaScript was downloaded to render this
           page. (Zero JavaScript no matter the size of your app.)
@@ -20,6 +20,7 @@ export const App = component$(() => {
         <li>
           Try interacting with this component by changing{' '}
           <input
+            class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 rounded-md sm:text-sm focus:ring-1"
             value={state.name}
             on$:keyup={() => {
               const event = useEvent<KeyboardEvent>();
@@ -30,7 +31,7 @@ export const App = component$(() => {
           .
         </li>
         <li>
-          Observe that the binding changes: <code>Hello {state.name}!</code>
+          Observe that the binding changes: <code class="bg-slate-200 italic">Hello {state.name}!</code>
         </li>
         <li>
           Notice that Qwik automatically lazily-loaded and hydrated the component upon interaction
@@ -44,7 +45,7 @@ export const App = component$(() => {
         <li>Build amazing web-sites with unbeatable startup performance.</li>
       </ol>
       <hr />
-      <p style={{ 'text-align': 'center' }}>
+      <p class="text-center">
         Made with ❤️ by{' '}
         <a target="_blank" href="https://www.builder.io/">
           Builder.io
