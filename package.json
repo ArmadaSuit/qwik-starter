@@ -5,7 +5,7 @@
   "scripts": {
     "build": "npm run typecheck && npm run build.client && npm run build.server",
     "build.client": "vite build --outDir server/public",
-    "build.server": "vite build --outDir server/build --ssr src/entry.express.tsx",
+    "build.server": "vite build --outDir server/build --ssr src/entry.express.ts",
     "dev": "vite",
     "dev.client": "vite --mode clientonly",
     "fmt": "prettier --write .",

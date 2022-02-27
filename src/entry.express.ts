@@ -6,7 +6,7 @@ import { existsSync } from 'fs';
 import type { RequestHandler } from 'express';
 
 // @ts-ignore
-import { render } from './entry.server';
+import { render } from './entry.server.tsx';
 
 // @ts-ignore
 import symbols from '../server/q-symbols.json';
